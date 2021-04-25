@@ -6,19 +6,18 @@ import imagesArr from './images/images'
 const Game = () => {
     const [gained, setGained] = useState(0)
     const [played, setPlayed] = useState(0)
-    const [isVisible, setIsVisible] = useState({
-      divOne: '',
-      divTwo:''
-    })
     const [cardsArray, setCardsArray] = useState(imagesArr)
-    //const [isWinning, setIsWinning] = useState(false)
     const [counter, setCounter] = useState(0)
     const [message, setMessage] = useState(null)
     const [foundCouples, setFoundCouples] = useState(null)
+    const [isVisible, setIsVisible] = useState({
+        divOne: '',
+        divTwo:''
+      })
+
     const updateCounter = () => {
       setCounter(0)
     }
-  
   
     const randomClick = (e) => {
       setMessage(null)
@@ -35,7 +34,7 @@ const Game = () => {
         e.target.firstChild.className = 'tileVisible'
         setCounter(counter+1)
         setIsVisible(prevState => ({...prevState, divOne: e.target.firstChild
-      }))} else if (counter === 1 && (!isNaN(e.target.firstChild.id) && e.target.id !== isVisible.divOne.id)){ 
+      }))} else if (counter === 1  && e.target.id !== isVisible.divOne.id){ 
         e.target.firstChild.className = 'tileVisible'
         setIsVisible(prevState => ({...prevState, divTwo: e.target.firstChild  
         }))

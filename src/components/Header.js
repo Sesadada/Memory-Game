@@ -14,6 +14,7 @@ const Header = (props) => {
             isVisible.divOne.className = 'tileHidden'
             isVisible.divTwo.className = 'tileHidden'
           }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[gained])
 
     
@@ -36,13 +37,14 @@ const Header = (props) => {
     return (
         <div>
           <h1>Memory Game</h1>
+          <p className='explication'>Find the 8 couple of names by uncovering 2 cards at the time</p>
           <div className={!isWinning? 'tileHidden':'points'}>
-            <p>{message}</p>
+            <p >{message}</p>
             <button className={isWinning? 'playBtn':'tileHidden'} onClick={playAgain}>Shuffle and play again</button>
          </div>
          <div className={isWinning? 'tileHidden':'points'}>
            <p> Attempts: {played} </p>     
-           <p>{message} Couples found: {gained}</p>
+           <p><b style={{color:'#062af8'}}>{message}</b> Couples found: {gained}</p>
         </div>
             
         </div>
