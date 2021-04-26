@@ -19,6 +19,7 @@
   );
   height: 100vh;
 }
+
 h1 {
   font-size: 40px;
   font-weight: 500;
@@ -166,6 +167,9 @@ h1 {
 
 /*  for mobiles  */
 @media only screen and (max-width: 600px) {
+  .App {
+    height: 100%;
+  }
   h1 {
     font-size: 39px;
     font-weight: 800;
@@ -212,6 +216,7 @@ h1 {
     gap: 0.6rem;
     width: 20rem;
     text-align: center;
+    padding-bottom: 2rem;
   }
 
   .tile {
