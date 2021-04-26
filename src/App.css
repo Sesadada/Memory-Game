@@ -179,7 +179,7 @@ h1 {
     font-size: 39px;
     font-weight: 800;
     color: #062af8;
-    padding: 2rem 0 1.5rem 0;
+    padding: 1rem 0 1rem 0;
     letter-spacing: 0px;
   }
   .explication {
@@ -189,7 +189,7 @@ h1 {
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: white;
     height: 4rem;
     width: 20rem;
@@ -205,7 +205,7 @@ h1 {
   }
   .attempts,
   .couples {
-    padding: 0.5rem;
+    padding: 0.25rem;
     font-weight: 500;
     color: #031a9e;
   }
