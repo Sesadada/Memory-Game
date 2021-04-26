@@ -22,7 +22,7 @@ body {
     rgba(253, 114, 255, 1) 49%,
     rgba(255, 251, 65, 1) 100%
   );
-  height: 100vh;
+  height: 100%;
 }
 
 h1 {
@@ -173,7 +173,7 @@ h1 {
 /*  for mobiles  */
 @media only screen and (max-width: 600px) {
   .App {
-    min-height: 100%;
+    min-height: 100vh;
   }
   h1 {
     font-size: 39px;
@@ -657,7 +657,7 @@ h1 {
       rgba(253, 114, 255, 1) 49%,
       rgba(255, 251, 65, 1) 100%
     );
-    height: 100vh;
+    height: 100%;
   }
 
   h1 {
