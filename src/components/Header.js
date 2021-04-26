@@ -43,8 +43,8 @@ const Header = (props) => {
             <button className={isWinning? 'playBtn':'tileHidden'} onClick={playAgain}>Shuffle and play again</button>
          </div>
          <div className={isWinning? 'tileHidden':'points'}>
-           <p> Attempts: {played} </p>     
-           <p><b style={{color:'#062af8'}}>{message}</b> Couples found: {gained}</p>
+           <p className='attempts'> Attempts: {played} </p>     
+           <p className='couples'><b style={{color:'#062af8'}}>{message}</b> Couples found: {gained}</p>
         </div>
             
         </div>
